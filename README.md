@@ -9,4 +9,9 @@ Com o tempo vou colocando novas páginas e mostrando mudanças.
 ### Página de Login
 ![alt text](public/PageLogin.png)
 
+### Página Home
+<p >
+  <img  src="./public/PaginaHome.gif">
+</p>
+
 
