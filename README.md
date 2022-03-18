@@ -16,7 +16,7 @@ Com o tempo vou colocando novas páginas e mostrando mudanças.
 
 ### Página Profile
 <p >
-  <img width="830" height="465.656" src="./public/PageProfile.gif">
+  <img src="./public/PaginaProfile.gif">
 </p>
 
 
