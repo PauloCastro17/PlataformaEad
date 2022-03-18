@@ -1,0 +1,34 @@
+.container-NavbarProfile{
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    width: 170px;
+    background-color: #FFF;
+    animation: slideY 1s;
+}
+
+.NavbarProfile button{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.NavbarProfile button:hover{
+    background-color: #b9b9b9;
+    transition-duration: 1s
+}
+
+.NavbarProfile{
+    margin: 5px;
+}
+
+@keyframes slideY {
+    from{
+        transform: translateY(15px)
+    }
+    to{
+        transform: translateY(0px)
+
+    }
+}

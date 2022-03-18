@@ -6,13 +6,33 @@ import PersonThree from '../../assets/images/PersonThree.png'
 import Linha from '../../assets/icons/Linha.png';
 import Book from '../../assets/images/Book.png';
 import Quadro from '../../assets/images/Quadro.png';
+import { useParams } from 'react-router-dom';
 function Home(){
+
+    const {alunoId}  = useParams();
+
+    function Profile(){
+        window.location.href = "http://localhost:3000/Profile/"+alunoId
+    }
+
+    function Notas(){
+        window.location.href = "http://localhost:3000/Notas/"+alunoId
+    }
+
+    function UltimasAtividades(){
+        window.location.href = "http://localhost:3000/Ultimas-Atividades/"+alunoId
+    }
+
+    function QuadroAvisos(){
+        window.location.href = "http://localhost:3000/Quadro-de-Avisos/"+alunoId
+    }
+
     return(
         <>
             <NavBar />
                 <div className="container-home">
                     <div className="row-home">
-                        <button>
+                        <button onClick={Profile}>
                             <div className="button-home ButtonOne">
                                 <h3>Perfil</h3>
                                     <div className="images">
@@ -22,7 +42,7 @@ function Home(){
                                     </div>
                             </div>
                         </button>
-                        <button>
+                        <button onClick={Notas}>
                             <div className="button-home">
                                 <h3>Notas</h3>
                                 <div className="linhas">
@@ -32,7 +52,7 @@ function Home(){
                                 </div>
                             </div>
                         </button>
-                        <button>
+                        <button onClick={UltimasAtividades}>
                             <div className="button-home">
                                 <h3>Últimas Atividades</h3>
                                 <div className="images2">
@@ -40,7 +60,7 @@ function Home(){
                                 </div>
                             </div>
                         </button>
-                        <button>
+                        <button onClick={QuadroAvisos}>
                             <div className="button-home">
                                 <h3>Quadro de Avisos</h3>
                                 <div className="images2">

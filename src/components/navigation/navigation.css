@@ -1,0 +1,68 @@
+.container-navigation{
+    width: 100%;  
+    height: 100%; 
+}
+
+
+
+.buttons-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.buttons-navigation button{
+    padding: 12px;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+#disciplinas{
+    display: none;
+}
+
+#disciplinas button{
+    padding: 12px;
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 65px;
+    border-radius: 4px;
+    font-size: 17px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    animation: slideY 0.5s;
+}
+
+.buttons-navigation button:hover{
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 15px;
+        -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+#disciplinas button:hover{
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 15px;
+        -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+@keyframes slideY {
+    from {
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}

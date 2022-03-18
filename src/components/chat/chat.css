@@ -1,0 +1,79 @@
+.container-chat{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    width: 350px;
+    height: 75%;
+    background-color: #051733;
+    color: #fff;
+    animation: slideX 1.5s;
+}
+
+.chat-mensage{
+    color: #fff;
+    padding: 3px;
+    width: 340px;
+    margin-left: 2px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ff863be0;
+}
+
+.chat-mensage:hover{
+    background-color: #ff863ba8;   
+}
+
+@keyframes slideX {
+    from{
+        transform: translateX(400px)
+    }
+    to{
+        transform: translateX(0px)
+
+    }
+}
+
+.chat-mensage-individual{
+    color: #fff;
+    padding: 3px;
+    width: 340px;
+    margin-left: 2px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-chat-individual{
+    display: flex;
+    align-items: center;
+    background-color: #ff863be0;
+    border-radius: 8px;
+}
+
+.chat-mensage-individual h1{
+    display: flex;
+    justify-content: center;
+}
+
+.header-chat-individual img{
+    width: 35px;
+}
+
+.mensage-professor{
+    background-color: #ff863be0;
+    border-radius: 8px;
+    width: 250px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mensage-aluno{
+    background-color: #ff863be0;
+    border-radius: 8px;
+    width: 250px;
+    margin-left: 25%;
+}

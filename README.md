@@ -14,4 +14,11 @@ Com o tempo vou colocando novas páginas e mostrando mudanças.
   <img  src="./public/PaginaHome.gif">
 </p>
 
+### Página Profile
+<p >
+  <img  src="./public/PageProfile.gif">
+</p>
+
+
+
 
